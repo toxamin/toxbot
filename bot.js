@@ -11,8 +11,4 @@ client.on('message', message => {
   	}
 });
 
-client.on("serverNewMember", function (server, user) {
-    client.addMemberToRole(user, server.roles.get("name", "RoleName"), function (err) { if (err) console.log(err);
-});
-
 client.login(process.env.BOT_TOKEN);
